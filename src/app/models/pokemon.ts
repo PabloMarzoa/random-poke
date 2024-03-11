@@ -1,0 +1,21 @@
+export interface Pokemon {
+  id: string,
+  name: string,
+  base_experience: number,
+  height: number,
+  is_default: true,
+  order: 56,
+  weight:75,
+  abilities: any[],
+  forms: any[],
+  game_indices: any[],
+  held_items: any[],
+  location_area_encounters: string,
+  moves: any[],
+  species: any,
+  sprites: any,
+  cries: any,
+  stats: any[],
+  types: any[],
+  past_types: any[]
+}

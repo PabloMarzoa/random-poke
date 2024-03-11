@@ -1,0 +1,11 @@
+<button (click)="getNewPokemon()" [disabled]="loading">Get new Pokemon</button>
+
+<section *ngFor="let poke of loadedPokemon" class="poke-section">
+  <div>{{poke.id}}</div>
+  <div>{{poke.name}}</div>
+  <div *ngIf="poke.sprites">
+    Sprite:
+    <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;"
+         [src]="poke.sprites['back_default']">
+  </div>
+</section>
